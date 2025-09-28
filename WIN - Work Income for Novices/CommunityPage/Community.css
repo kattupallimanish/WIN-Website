@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #22c55e;
+    --secondary-color: #2563eb;
+    --background-color: #e6f3ff;
+    --text-color: #34495e;
+    --white-color: #ffffff;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Navbar CSS code starts here*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 150px;
+    background: var(--white-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    color: var(--text-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo .company-name{
+    color: var(--secondary-color);
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    color: var(--white-color);
+}
+
+.logo-text strong {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.logo-text span {
+    font-size: 13px;
+}
+
+/* Menu */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a.active {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 2px;
+}
+
+.nav-links li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Button */
+.get-started {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.get-started:hover {
+    background: var(--secondary-color);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+    z-index: 999;
+}
+/* Navbar CSS code ends here*/
+
+/* Community & Impact Section CSS Code starts here */
+.impact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.impact-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.impact-section p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.impact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.impact-card {
+    background: var(--white-color);
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+}
+
+.impact-card i {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.impact-card h3 {
+    font-size: 22px;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.impact-card p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Icon colors */
+.fa-medal, .fa-chart-line { color: var(--secondary-color); }
+.fa-users, .fa-star { color: var(--secondary-color); }
+/* Community & Impact Section CSS Code ends here */
+
+/* Success Stories Section CSS Code starts here */
+.success-stories {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.success-stories h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.stories-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-card {
+    background: var(--white-color);
+    border: 1px solid var(--background-color);
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.profile-info span {
+    display: block;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 1px solid var(--background-color);
+    border-bottom: 1px solid var(--background-color);
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats .projects {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.stats .earned {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stats span {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Achievement */
+.achievement {
+    background: var(--background-color);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.achievement strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Quote */
+.quote {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+/* Success Stories Section CSS Code ends here */
+
+/* Testimonials Section CSS Code starts here */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: var(--white-color);
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Stars */
+.stars {
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.client-info {
+    border-top: 1px solid var(--background-color);
+    padding-top: 15px;
+}
+
+.client-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.client-info span {
+    display: block;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+/* Testimonials Section code ends here */
+
+/* CTA Section's CSS code starts here */
+.cta-section {
+    background: linear-gradient(90deg, #162c4a, #26a85b);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.cta-button {
+    border: 2px solid var(--white-color);
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--white-color);
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+/* CTA section's CSS ends here */
+
+/* Footer section's CSS Code starts here */
+footer {
+    background: #162544;
+    color: red;
+    padding: 50px 40px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer's Left section CSS Code starts here */
+.footer-left .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #0f766e, #22c55e);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo-text strong {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.logo-text span {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.footer-left p {
+    margin: 12px 0;
+    font-size: 14px;
+    color: #e5e7eb;
+}
+
+.contact-info {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: var(--secondary-color);
+}
+/* Footer's Left section CSS Code ends here */
+
+/* Footer's Column Links CSS Code starts here */
+.footer-column h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: var(--secondary-color);
+}
+/* Footer's Column Links CSS Code ends here */
+
+/* Social icons CSS Code starts here*/
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #d1d5db;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+/* Social icons CSS Code ends here*/
+
+/* Footer's bottom section  CSS Code starts here*/
+.footer-bottom {
+    border-top: 1px solid #334155;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #9ca3af;
+}
+/* Footer's bottom section CSS Code ends here*/
+
+
+/* Responsive CSS code starts here*/
+/* Responsive CSS code for width: 480px starts here */
+@media (max-width: 480px) {
+    .impact-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+/* Responsive CSS code for width: 480px ends here */
+
+/* Responsive CSS code for width: 468px starts here */
+@media (max-width: 768px) {
+    /* Navbar CSS Code starts here */
+    nav{
+        padding: 12px 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        background: #fff;
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #3c64aa;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    /* Navbar CSS Code ends here */
+
+    /* Community & Impact Section CSS Code starts here */
+    .impact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    /* Community & Impact Section CSS Code ends here */
+
+    /* Testimonials Section CSS Code starts here */
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    /* Testimonials Section CSS Code ends here */
+
+    /* Success Stories Section CSS Code starts here */
+    .stories-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    /* Success Stories Section CSS Code ends here */
+
+    /* CTA Section CSS Code starts here */
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    /* CTA Section CSS Code ends here */
+
+    /* Footer CSS Code starts here */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .footer-left, .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: left;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+    /* Footer CSS Code ends here */
+}
+/* Responsive CSS code for width: 768px ends here */
+
+/* Responsive CSS code for width: 900px starts here */
+@media (max-width: 900px) {
+    /* Testimonial Section CSS Code starts here */
+    .impact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    /* Testimonials Section CSS Code ends here */
+
+    /* Success stories section's CSS code starts here */
+    .stories-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    /* Success stories section's CSS code ends here */
+}
+/* Responsive CSS code for width: 900px ends here */
+/* Responsive CSS code ends here*/

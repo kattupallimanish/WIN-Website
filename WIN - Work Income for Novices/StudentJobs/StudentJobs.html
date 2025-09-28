@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--StyleSheet Link-->
+  <link rel="stylesheet" href="/StudentJobs/StudentJobs.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- For Modern Android Browsers-->
+  <link rel="icon" type="image/png" sizes="192x192" href="/Assets/Src-Images/Common-Images/WIN-Logo.png">
+
+  <!-- For Mac devices -->
+  <link rel="apple-touch-icon" href="/Assets/Src-Images/Common-Images/WIN-Logo.png">
+
+  <title>WIN - Work Income for Novices</title>
+</head>
+<body>
+
+  <br><br><br>
+
+  <!--Navbar code starts here-->
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <a class="logo-icon" href="/HomePage/home.html"><img src="/Assets/Src-Images/Common-Images/WIN-Logo.png" alt="WIN Logo"></a>
+      <div class="logo-text">
+        <strong class="company-name">W I N</strong>
+        <span>Work Income for Novices</span>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <ul class="nav-links">
+      <li><a href="/HomePage/home.html">Home</a></li>
+      <li><a href="/OurServicesPage/Our-Services.html">Our Services</a></li>
+      <li><a href="/StudentJobs/StudentJobs.html" class="active">Student Jobs</a></li>
+      <li><a href="/AboutUsPage/AboutUs.html">About Us</a></li>
+      <li><a href="/CommunityPage/Community.html">Community</a></li>
+      <li><a href="/ContactPage/Contact.html">Contact</a></li>
+      <li><button class="get-started" href="/ContactPage/Contact.html">Get Started</button></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <!--Navbar code ends here-->
+
+  <!-- Work Section code starts here-->
+  <section class="work-section">
+    <h2>Work & Learn with WIN</h2>
+    <p>
+      Connect with real business projects, earn competitive pay, and build valuable experience while studying. 
+      WIN bridges the gap between education and professional success.
+    </p>
+    <a href="#community" class="cta-btn">Join WIN Community</a>
+  </section>
+  <!-- Work Section code ends here-->
+
+  <!--Why choose WIN? Section code starts here-->
+  <section class="win-benefits">
+    <h2>Why Students Choose WIN</h2>
+    <div class="benefits-container">
+      <div class="benefit-box">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/us-dollar.png" alt="Dollar Icon"/>
+        </div>
+        <h3>Competitive Pay</h3>
+        <p>Earn $10–30/hour based on your skills and project complexity</p>
+      </div>
+
+      <div class="benefit-box">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/clock.png" alt="Clock Icon"/>
+        </div>
+        <h3>Flexible Schedule</h3>
+        <p>Work around your class schedule with flexible project timelines</p>
+      </div>
+
+      <div class="benefit-box">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/prize.png" alt="Award Icon"/>
+        </div>
+        <h3>Real Experience</h3>
+        <p>Build your portfolio with actual business projects and client work</p>
+      </div>
+
+      <div class="benefit-box">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/graduation-cap.png" alt="Graduation Icon"/>
+        </div>
+        <h3>Skill Development</h3>
+        <p>Learn industry-standard tools and gain mentorship from professionals</p>
+      </div>
+    </div>
+  </section>
+  <!--Why choose WIN? section code ends here-->
+
+  <!--Opportunities Section code starts here-->
+  <section class="opportunities">
+    <h2>Want to earn while learning?</h2>
+    <p>Why wait until graduation? Start earning now by putting your skills into action and gaining experience that sets you apart.</p>
+    <div class="opportunity-grid">
+
+      <!-- Tech & Development -->
+      <div class="opportunity-card">
+        <div class="card-header">
+          <div class="icon-box">
+            <!-- Laptop Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M4 5h16v10H4z" opacity="0.4"/>
+              <path d="M2 17h20v2H2z"/>
+            </svg>
+          </div>
+          <h3>Tech & Development</h3>
+        </div>
+        <p>Web development, mobile apps, software solutions</p>
+        <div class="tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Python</span>
+          <span>Mobile Development</span>
+        </div>
+        <div class="opportunity-meta">
+          <a href="/ContactPage/Contact.html"><button>Apply now</button></a>
+          <span class="rate">₹1,999/Project</span>
+        </div>
+      </div>
+
+      <!-- Design & Creative -->
+      <div class="opportunity-card">
+        <div class="card-header">
+          <div class="icon-box">
+            <!-- Palette Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 3a9 9 0 0 0 0 18h1a3 3 0 0 0 0-6h-1.5a1.5 1.5 0 0 1 0-3H13a4 4 0 0 0 0-8z"/>
+            </svg>
+          </div>
+          <h3>Design & Creative</h3>
+        </div>
+        <p>Graphic design, UI/UX, branding, illustrations</p>
+        <div class="tags">
+          <span>Photoshop</span>
+          <span>Figma</span>
+          <span>Illustrator</span>
+          <span>Branding</span>
+        </div>
+        <div class="opportunity-meta">
+          <a href="/ContactPage/Contact.html"><button>Apply now</button></a>
+          <span class="rate">₹1,000/Project</span>
+        </div>
+      </div>
+
+      <!-- Marketing & Growth -->
+      <div class="opportunity-card">
+        <div class="card-header">
+          <div class="icon-box">
+            <!-- Chart Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M3 3v18h18" stroke="white" stroke-width="2" fill="none"/>
+              <path d="M7 14l4-4 4 4 5-6" stroke="white" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <h3>Marketing & Growth</h3>
+        </div>
+        <p>Social media, content marketing, SEO, analytics</p>
+        <div class="tags">
+          <span>Social Media</span>
+          <span>Content Writing</span>
+          <span>SEO</span>
+          <span>Analytics</span>
+        </div>
+        <div class="opportunity-meta">
+          <a href="/ContactPage/Contact.html"><button>Apply now</button></a>
+          <span class="rate">₹1,999/Project</span>
+        </div>
+      </div>
+
+      <!-- Content & Research -->
+      <div class="opportunity-card">
+        <div class="card-header">
+          <div class="icon-box">
+            <!-- Users Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="9" cy="7" r="4" fill="white"/>
+              <path d="M17 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM5 21v-2a4 4 0 0 1 8 0v2zM13 21v-2a4 4 0 0 1 8 0v2z" fill="white"/>
+            </svg>
+          </div>
+          <h3>Content & Research</h3>
+        </div>
+        <p>Writing, research, data analysis, documentation</p>
+        <div class="tags">
+          <span>Research</span>
+          <span>Technical Writing</span>
+          <span>Data Analysis</span>
+          <span>Documentation</span>
+        </div>
+        <div class="opportunity-meta">
+          <a href="/ContactPage/Contact.html"><button>Apply now</button></a>
+          <span class="rate">₹999/Project</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Opportunities Section code ends here-->
+
+  <!--How it Works Section code starts here-->
+  <section class="how-it-works">
+    <h2>How it works?</h2>
+    <div class="steps">
+
+      <!-- Step 1 -->
+      <div class="step">
+        <div class="circle">1</div>
+        <h3>Register & Build Profile</h3>
+        <p>Create your profile showcasing your skills, portfolio, and academic background.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step">
+        <div class="circle">2</div>
+        <h3>Get Matched with Projects</h3>
+        <p>Our team matches you with projects that align with your skills and interests.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step">
+        <div class="circle">3</div>
+        <h3>Work & Learn</h3>
+        <p>Collaborate with real businesses while gaining valuable professional experience.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step">
+        <div class="circle">4</div>
+        <h3>Earn & Grow</h3>
+        <p>Get paid for your work and build a strong portfolio for your future career.</p>
+      </div>
+
+    </div>
+  </section>
+  <!--How it Works Section code ends here-->
+
+  <!-- Student Success Stories Section code starts here -->
+     <section class="success-stories">
+    <h2>Student Success Stories</h2>
+    <div class="cards-container">
+      
+      <div class="card">
+        <div class="profile">
+          <div class="avatar">S</div>
+          <div>
+            <h3>Sarah Chen</h3>
+            <p class="subtext">Computer Science Student</p>
+          </div>
+        </div>
+        <div class="project">
+          <p class="project-title">E-commerce Website</p>
+          <p class="earnings">$2,400 earned</p>
+        </div>
+        <p class="quote">"Working with WIN helped me land my dream internship at a tech startup!"</p>
+      </div>
+
+      <div class="card">
+        <div class="profile">
+          <div class="avatar">M</div>
+          <div>
+            <h3>Marcus Johnson</h3>
+            <p class="subtext">Design Student</p>
+          </div>
+        </div>
+        <div class="project">
+          <p class="project-title">Brand Identity Project</p>
+          <p class="earnings">$1,800 earned</p>
+        </div>
+        <p class="quote">"The real-world experience I gained is invaluable. My portfolio stands out now!"</p>
+      </div>
+
+      <div class="card">
+        <div class="profile">
+          <div class="avatar">P</div>
+          <div>
+            <h3>Priya Patel</h3>
+            <p class="subtext">Marketing Student</p>
+          </div>
+        </div>
+        <div class="project">
+          <p class="project-title">Social Media Campaign</p>
+          <p class="earnings">$1,500 earned</p>
+        </div>
+        <p class="quote">"WIN gave me the confidence and skills to start my own marketing consultancy."</p>
+      </div>
+
+    </div>
+  </section>
+  <!--Student Success Stories section code ends here-->
+  
+  <!--Footer section code starts here-->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Left -->
+      <div class="footer-left">
+        <div class="logo">
+          <a class="logo-icon" href="/HomePage/home.html"><img src="/Assets/Src-Images/Common-Images/WIN-Logo.png" alt="WIN Logo"></a>
+          <div class="logo-text">
+            <strong>W I N</strong><br>
+            <span>Work Income for Novices</span>
+          </div>
+        </div>
+        <p>"Business Consultancy Services Powered by Student Talent" – Affordable services for businesses. Real jobs for students.</p>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i>workincomefornovices@gmail.com</p>
+          <p><i class="fas fa-phone"></i>+91 99894 23469</p>
+          <p><i class="fas fa-map-marker-alt"></i>NTR Nagar, L.B.Nagar, Hyderabad</p>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/OurServicesPage/Our-Services.html">Our Services</a></li>
+          <li><a href="/StudentJobs/StudentJobs.html">Student Jobs</a></li>
+          <li><a href="/AboutUsPage/AboutUs.html">About Us</a></li>
+          <li><a href="/CommunityPage/Community.html">Community</a></li>
+          <li><a href="/ContactPage/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Social Media Marketing</a></li>
+          <li><a href="#">Science Illustration</a></li>
+        </ul>
+      </div>
+
+      <!-- Students -->
+      <div class="footer-column">
+        <h4>For Students</h4>
+        <ul>
+          <li><a href="#">Join as Student</a></li>
+          <li><a href="#">Available Projects</a></li>
+          <li><a href="#">Success Stories</a></li>
+        </ul>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="far fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2024 Work Income for Novices(WIN)</p>
+    </div>
+  </footer>
+  <!--Footer section code ends here-->
+  
+  <!--Navbar JS Code starts here-->
+  <script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+  <!--Navbar JS Code ends here-->
+
+</body>
+</html>
